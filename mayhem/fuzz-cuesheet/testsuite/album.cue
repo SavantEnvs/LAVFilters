@@ -1,0 +1,14 @@
+REM GENRE Rock
+PERFORMER "The Band"
+TITLE "Live Album"
+FILE "album.flac" WAVE
+  TRACK 01 AUDIO
+    TITLE "Opening"
+    INDEX 01 00:00:00
+  TRACK 02 AUDIO
+    TITLE "Second \"Song\""
+    PERFORMER "Guest"
+    INDEX 00 03:58:00
+    INDEX 01 04:01:30
+  TRACK 03 AUDIO
+    INDEX 00 09:00:00

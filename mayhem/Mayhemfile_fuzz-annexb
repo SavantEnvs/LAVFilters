@@ -1,0 +1,9 @@
+project: savantenvs/LAVFilters
+target: fuzz-annexb
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz-annexb/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_annexb
+    libfuzzer: true
+    timeout: 5

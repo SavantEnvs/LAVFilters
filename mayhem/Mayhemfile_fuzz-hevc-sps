@@ -1,0 +1,9 @@
+project: savantenvs/LAVFilters
+target: fuzz-hevc-sps
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz-hevc-sps/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_hevc_sps
+    libfuzzer: true
+    timeout: 5

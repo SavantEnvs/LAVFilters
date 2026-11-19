@@ -1,0 +1,9 @@
+project: savantenvs/LAVFilters
+target: fuzz-h264-sps
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz-h264-sps/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_h264_sps
+    libfuzzer: true
+    timeout: 5
